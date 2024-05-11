@@ -14,9 +14,9 @@
 2. prototype : 자신이 다른 객체의 원형이 되는 객체
 3. instance : 클래스의 새로이 만들어진 ***인스턴스***가 자유롭게 사용할 수 있는 그 클래스의 메소드
 
-![Untitled](Chapter%206%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%90%E1%85%A9%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%206e43a442ab4449d882c5f0a6c3d3f5d6/Untitled.png)
+![Untitled](Untitled.png)
 
-![oo_person_class.svg](Chapter%206%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%90%E1%85%A9%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%206e43a442ab4449d882c5f0a6c3d3f5d6/oo_person_class.svg)
+![oo_person_class.svg](oo_person_class.svg)
 
 - Person : Constructor
 - Jane, tarzan : instance
@@ -58,7 +58,7 @@ tj.getName();
 - 자바스크립트에서는 합수에 자동으로 prototype 프로퍼티를 생성해 놓는데, 해당 함수를 new 연산자와 함께 함수를 호출할 경우, 그로부터 생성된 인스턴스에는 숨겨진 프로퍼티(__proto__)가 자동으로 생성되며, 이는 생성자 함수의 prototype 프로퍼티를 참조하게 됨.
 - __proto__는 생략이 가능하기 때문에 생성자 함수의 prototype의 메서드나 프로퍼티를 자신의 것처럼 접근할 수 있게 됨.
 
-![Untitled](Chapter%206%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%90%E1%85%A9%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%206e43a442ab4449d882c5f0a6c3d3f5d6/Untitled%201.png)
+![Untitled](Untitled%201.png)
 
 - 그러나 Array라는 생성자 함수를 원형으로 arr라는 변수를 생성한 경우, arr는 Array 함수의 정적 메서드인 from, isArray, of 등은 사용할 수 없음
 - Array의 prototype 프로퍼티 내부에 있지 않기 때문.
@@ -122,9 +122,9 @@ console.log(iu.getName()); // 바로 지금
 
 ### 프로토타입 체인
 
-![image.png](Chapter%206%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%90%E1%85%A9%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%206e43a442ab4449d882c5f0a6c3d3f5d6/image.png)
+![image.png](image.png)
 
-![Untitled](Chapter%206%20%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%90%E1%85%A9%E1%84%90%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B8%206e43a442ab4449d882c5f0a6c3d3f5d6/Untitled%202.png)
+![Untitled](Untitled%202.png)
 
 - 여기서 arr는 Array의 메서드 -> Object의 메서드를 모두 자신의 것처럼 실행할 수 있음.
 - 어떤 데이터의 프로퍼티 내부에 다시 프로퍼티가 연쇄적으로 이어진 것을 프로토타입 체인이라고 함
